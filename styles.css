@@ -1,0 +1,45 @@
+html {background-color: beige;}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none ;
+    color: beige;
+}
+
+header { 
+         background-color: black;
+         display:flex;
+         min-height: 70px;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+}
+.imagen-redonda {border-radius: 50%; height: 75px;
+                 margin: 10px;}
+.nav-link {position: right;}
+.nombre-empresa {color: beige;}
+
+nav a {font-weight: 600;
+         margin: 3px;}
+
+nav a:hover {
+    color: coral;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
